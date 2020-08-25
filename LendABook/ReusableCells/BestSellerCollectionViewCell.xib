@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BestSellerCollectionViewCell" customModule="LendABook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="285"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="143" height="285"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkH-D7-X0e">
+                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="285"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theZoo" translatesAutoresizingMaskIntoConstraints="NO" id="oGi-Ni-lOJ">
+                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="5r9-nV-wtZ"/>
+                                    <constraint firstAttribute="width" constant="122.5" id="cHW-Bc-ijw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="The Zoo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0E-KF-s5y">
+                                <rect key="frame" x="20" y="220" width="122.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122.5" id="a2I-f5-Ci3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Christopher Wilson" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re6-Ba-8oX">
+                                <rect key="frame" x="20" y="246" width="122.5" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122.5" id="cOF-Eb-2Qc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Y0E-KF-s5y" firstAttribute="leading" secondItem="DkH-D7-X0e" secondAttribute="leading" constant="20" id="4TX-m3-z53"/>
+                            <constraint firstItem="re6-Ba-8oX" firstAttribute="top" secondItem="Y0E-KF-s5y" secondAttribute="bottom" constant="8" id="4nO-dF-YaS"/>
+                            <constraint firstItem="Y0E-KF-s5y" firstAttribute="top" secondItem="oGi-Ni-lOJ" secondAttribute="bottom" constant="20" id="TxS-1d-dYf"/>
+                            <constraint firstAttribute="width" constant="122.5" id="VGG-z2-WUh"/>
+                            <constraint firstAttribute="bottom" secondItem="re6-Ba-8oX" secondAttribute="bottom" constant="20" id="ohk-uN-zEb"/>
+                            <constraint firstItem="re6-Ba-8oX" firstAttribute="leading" secondItem="DkH-D7-X0e" secondAttribute="leading" constant="20" id="r2Q-Ts-NyC"/>
+                            <constraint firstItem="oGi-Ni-lOJ" firstAttribute="top" secondItem="DkH-D7-X0e" secondAttribute="top" id="yFC-MF-8hE"/>
+                            <constraint firstItem="oGi-Ni-lOJ" firstAttribute="leading" secondItem="DkH-D7-X0e" secondAttribute="leading" id="zeL-Hb-gzq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="DkH-D7-X0e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BsU-dE-CaM"/>
+                <constraint firstAttribute="bottom" secondItem="DkH-D7-X0e" secondAttribute="bottom" id="XAq-Aa-hRC"/>
+                <constraint firstItem="DkH-D7-X0e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="e5g-W0-fSn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="143" height="285"/>
+            <connections>
+                <outlet property="authorName" destination="re6-Ba-8oX" id="b1S-ca-e7N"/>
+                <outlet property="bookName" destination="Y0E-KF-s5y" id="hzp-lg-bVM"/>
+                <outlet property="imageView" destination="oGi-Ni-lOJ" id="NLD-cl-2uy"/>
+            </connections>
+            <point key="canvasLocation" x="199.27536231884059" y="209.26339285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="theZoo" width="152.5" height="230"/>
+    </resources>
+</document>
