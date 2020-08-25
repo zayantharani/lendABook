@@ -86,7 +86,6 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
 extension SearchViewController: UISearchBarDelegate {
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         print("I am called")
-        headersCollectionView.isHidden = true
         tableView.isHidden = false
     }
     

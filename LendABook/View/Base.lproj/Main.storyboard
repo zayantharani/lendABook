@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IJb-vh-2IF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iZh-Di-zHe">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -561,7 +561,7 @@ Every Taste</string>
             </objects>
             <point key="canvasLocation" x="6875" y="-108"/>
         </scene>
-        <!--Root View Controller-->
+        <!-- -->
         <scene sceneID="Oub-dG-9d6">
             <objects>
                 <tableViewController id="nJc-1I-o5y" customClass="SideMenuTableViewController" customModule="LendABook" customModuleProvider="target" sceneMemberID="viewController">
@@ -586,7 +586,7 @@ Every Taste</string>
                             <outlet property="delegate" destination="nJc-1I-o5y" id="KXU-XQ-Gps"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="HQf-PN-lEp"/>
+                    <navigationItem key="navigationItem" title=" " id="HQf-PN-lEp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmd-pa-XQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
